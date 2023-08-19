@@ -1,10 +1,16 @@
+import {
+  ItemListFriends,
+  ListFriends,
+  StatusItem,
+} from './FriendListItem.styled';
+
 export const FriendListItem = ({ friends }) => {
   return (
-    <ul>
+    <ListFriends>
       {friends.map(item => {
         return (
-          <li key={item.id}>
-            <span className="status">❤</span>
+          <ItemListFriends key={item.id}>
+            <StatusItem level={item.isOnline}></StatusItem>
             <img
               className="avatar"
               src={item.avatar}
@@ -12,9 +18,9 @@ export const FriendListItem = ({ friends }) => {
               width="48"
             />
             <p className="name">{item.name}</p>
-          </li>
+          </ItemListFriends>
         );
       })}
-    </ul>
+    </ListFriends>
   );
 };
