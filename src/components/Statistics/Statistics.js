@@ -1,17 +1,18 @@
+import { ListStats, Wrap, ItemListStats, Topic } from './Statistics.styled';
 export const Statistics = ({ title, stats }) => {
   return (
-    <section>
-      <h2>{title}</h2>
-      <ul>
+    <Wrap>
+      <Topic displ={title}>{title}</Topic>
+      <ListStats>
         {stats.map(item => {
           return (
-            <li key={item.id}>
+            <ItemListStats key={item.id} color={item.percentage}>
               <span className="label">{item.label}</span>
               <span className="percentage">{item.percentage + '%'}</span>
-            </li>
+            </ItemListStats>
           );
         })}
-      </ul>
-    </section>
+      </ListStats>
+    </Wrap>
   );
 };

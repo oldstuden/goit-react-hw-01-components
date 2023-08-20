@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   padding-top: 50px;
   border-radius: 8px;
   text-align: center;
+  background-color: #fff;
 `;
 export const List = styled.ul`
   display: flex;
