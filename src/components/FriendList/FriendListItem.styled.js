@@ -24,7 +24,7 @@ export const StatusItem = styled.span`
   height: 15px;
   border-radius: 50%;
   background-color: ${props => {
-    switch (props.level) {
+    switch (props.$level) {
       case true:
         return 'green';
       case false:

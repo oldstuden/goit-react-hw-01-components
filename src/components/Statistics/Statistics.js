@@ -2,7 +2,7 @@ import { ListStats, Wrap, ItemListStats, Topic } from './Statistics.styled';
 export const Statistics = ({ title, stats }) => {
   return (
     <Wrap>
-      <Topic displ={title}>{title}</Topic>
+      <Topic $displ={title}>{title}</Topic>
       <ListStats>
         {stats.map(item => {
           return (

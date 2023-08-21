@@ -25,7 +25,7 @@ export const ItemListStats = styled.li`
 `;
 export const Topic = styled.h2`
   display: ${props => {
-    return props.displ ? 'block' : 'none';
+    return props.$displ ? 'block' : 'none';
   }};
   text-align: center;
   text-transform: uppercase;

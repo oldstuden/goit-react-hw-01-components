@@ -10,7 +10,7 @@ export const FriendListItem = ({ friends }) => {
       {friends.map(item => {
         return (
           <ItemListFriends key={item.id}>
-            <StatusItem level={item.isOnline}></StatusItem>
+            <StatusItem $level={item.isOnline}></StatusItem>
             <img
               className="avatar"
               src={item.avatar}
