@@ -1,4 +1,4 @@
-import { FriendListItem } from './FriendList/FriendListItem';
+import { FriendList } from './FriendList/FriendList';
 import { GlobalStyle } from './GlobalStyle';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
@@ -20,7 +20,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <FriendListItem friends={friends} />
+      <FriendList friends={friends} />
       <TransactionHistory items={transaction} />
       <GlobalStyle />
     </div>
